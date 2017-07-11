@@ -23,6 +23,11 @@
 		7B10C1FA1F0E226B00F0B158 /* user.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B10C1F61F0E226B00F0B158 /* user.plist */; };
 		7B10C1FE1F0E23DA00F0B158 /* ProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B10C1FD1F0E23DA00F0B158 /* ProfileController.m */; };
 		7B10C2011F0E23F900F0B158 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B10C2001F0E23F900F0B158 /* Reachability.m */; };
+		7B10C2041F0E28E400F0B158 /* ALinNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B10C2031F0E28E400F0B158 /* ALinNetworkTool.m */; };
+		7BC9DEDD1F0F2B1F007AB4E0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9DEDC1F0F2B1F007AB4E0 /* MainViewController.m */; };
+		7BC9DEE01F0F31D6007AB4E0 /* ALinNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9DEDF1F0F31D6007AB4E0 /* ALinNavigationController.m */; };
+		7BC9DEE31F0F320A007AB4E0 /* ThirdLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9DEE21F0F320A007AB4E0 /* ThirdLoginView.m */; };
+		7BC9DEE61F0F36BB007AB4E0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9DEE51F0F36BB007AB4E0 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,16 @@
 		7B10C1FD1F0E23DA00F0B158 /* ProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileController.m; sourceTree = "<group>"; };
 		7B10C1FF1F0E23F900F0B158 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		7B10C2001F0E23F900F0B158 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		7B10C2021F0E28E400F0B158 /* ALinNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinNetworkTool.h; sourceTree = "<group>"; };
+		7B10C2031F0E28E400F0B158 /* ALinNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinNetworkTool.m; sourceTree = "<group>"; };
+		7BC9DEDB1F0F2B1F007AB4E0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7BC9DEDC1F0F2B1F007AB4E0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7BC9DEDE1F0F31D6007AB4E0 /* ALinNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinNavigationController.h; sourceTree = "<group>"; };
+		7BC9DEDF1F0F31D6007AB4E0 /* ALinNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinNavigationController.m; sourceTree = "<group>"; };
+		7BC9DEE11F0F320A007AB4E0 /* ThirdLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdLoginView.h; sourceTree = "<group>"; };
+		7BC9DEE21F0F320A007AB4E0 /* ThirdLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdLoginView.m; sourceTree = "<group>"; };
+		7BC9DEE41F0F36BB007AB4E0 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7BC9DEE51F0F36BB007AB4E0 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BC7C693381562A2E178364FD /* libPods-MiaoShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MiaoShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68AFF53D80BD6B62082A6AA /* Pods-MiaoShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaoShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiaoShow/Pods-MiaoShow.debug.xcconfig"; sourceTree = "<group>"; };
 		F0130D725907EEC0FB11255C /* Pods-MiaoShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaoShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiaoShow/Pods-MiaoShow.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +225,8 @@
 		7B10C1E81F0E1FE300F0B158 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				7BC9DEDA1F0F2AC8007AB4E0 /* Controller */,
+				7BC9DED91F0F2AC6007AB4E0 /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -217,6 +234,10 @@
 		7B10C1E91F0E1FE300F0B158 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7BC9DEDB1F0F2B1F007AB4E0 /* MainViewController.h */,
+				7BC9DEDC1F0F2B1F007AB4E0 /* MainViewController.m */,
+				7BC9DEDE1F0F31D6007AB4E0 /* ALinNavigationController.h */,
+				7BC9DEDF1F0F31D6007AB4E0 /* ALinNavigationController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -226,6 +247,8 @@
 			children = (
 				7B10C1FF1F0E23F900F0B158 /* Reachability.h */,
 				7B10C2001F0E23F900F0B158 /* Reachability.m */,
+				7B10C2021F0E28E400F0B158 /* ALinNetworkTool.h */,
+				7B10C2031F0E28E400F0B158 /* ALinNetworkTool.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -276,6 +299,24 @@
 			children = (
 				7B10C1FC1F0E23DA00F0B158 /* ProfileController.h */,
 				7B10C1FD1F0E23DA00F0B158 /* ProfileController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7BC9DED91F0F2AC6007AB4E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BC9DEE11F0F320A007AB4E0 /* ThirdLoginView.h */,
+				7BC9DEE21F0F320A007AB4E0 /* ThirdLoginView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7BC9DEDA1F0F2AC8007AB4E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BC9DEE41F0F36BB007AB4E0 /* LoginViewController.h */,
+				7BC9DEE51F0F36BB007AB4E0 /* LoginViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -473,10 +514,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B10C2041F0E28E400F0B158 /* ALinNetworkTool.m in Sources */,
 				7B10C1B91F0E1A8C00F0B158 /* ViewController.m in Sources */,
 				7B10C1B61F0E1A8C00F0B158 /* AppDelegate.m in Sources */,
 				7B10C1B31F0E1A8C00F0B158 /* main.m in Sources */,
+				7BC9DEE61F0F36BB007AB4E0 /* LoginViewController.m in Sources */,
+				7BC9DEDD1F0F2B1F007AB4E0 /* MainViewController.m in Sources */,
+				7BC9DEE01F0F31D6007AB4E0 /* ALinNavigationController.m in Sources */,
 				7B10C1FE1F0E23DA00F0B158 /* ProfileController.m in Sources */,
+				7BC9DEE31F0F320A007AB4E0 /* ThirdLoginView.m in Sources */,
 				7B10C2011F0E23F900F0B158 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,6 +671,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MiaoShow/Classes/Frameworks",
 				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = /Users/apple/Documents/MiaoShow/MiaoShow/MiaoShow/Classes/Resoure/PrefixHeader.pch;
 				INFOPLIST_FILE = MiaoShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -642,6 +690,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MiaoShow/Classes/Frameworks",
 				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = /Users/apple/Documents/MiaoShow/MiaoShow/MiaoShow/Classes/Resoure/PrefixHeader.pch;
 				INFOPLIST_FILE = MiaoShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
