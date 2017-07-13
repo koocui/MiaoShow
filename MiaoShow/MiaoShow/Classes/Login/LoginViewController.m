@@ -108,7 +108,21 @@
     self.player = nil;
 }
 -(void)setup{
+    [self initObserver];
     
+    self.coverView.hidden = NO;
+    [self.quickBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@40);
+        make.right.equalTo(@-40);
+        make.bottom.equalTo(@-60);
+        make.height.equalTo(@40);
+    }];
+    
+    [self.thirdView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(@0);
+        make.height.equalTo(@60);
+        make.bottom.equalTo(self.quickBtn.mas_top).offset(-40);
+    }];
 }
 
 
@@ -124,7 +138,10 @@
             self.coverView.frame = self.view.bounds;
             [self.view insertSubview:self.coverView atIndex:0];
             [self.player play];
-//            dispatch_after(DISPATCH_TIME_NOW, (int64_t), <#^(void)block#>)
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.thirdView.hidden = NO;
+                self.quickBtn.hidden = NO;
+            });
         }
     }
 }
