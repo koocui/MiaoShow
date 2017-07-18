@@ -27,7 +27,7 @@
 -(IJKFFMoviePlayerController*)player{
     if (!_player){
         NSString * path = arc4random_uniform(10) % 2 ? @"login_video":@"loginmovie";
-        IJKFFMoviePlayerController * player = [[IJKFFMoviePlayerController alloc]initWithContentURLString:[[NSBundle mainBundle] pathForResource:path ofType:@"map4"] withOptions:[IJKFFOptions optionsByDefault]];
+        IJKFFMoviePlayerController * player = [[IJKFFMoviePlayerController alloc]initWithContentURLString:[[NSBundle mainBundle] pathForResource:path ofType:@"mp4"] withOptions:[IJKFFOptions optionsByDefault]];
         
         player.view.frame = self.view.bounds;
         
@@ -65,8 +65,9 @@
         UIButton * btn = [[UIButton alloc]init];
         btn.backgroundColor = [UIColor clearColor];
         btn.layer.borderWidth = 1;
-        btn.layer.backgroundColor = [UIColor yellowColor].CGColor;
+        btn.layer.backgroundColor = [UIColor whiteColor].CGColor;
         [btn setTitle:@"CJW快速通道" forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor magentaColor] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(loginSuccess) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:btn];
         btn.hidden = YES;
@@ -109,7 +110,7 @@
 }
 -(void)setup{
     [self initObserver];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     self.coverView.hidden = NO;
     [self.quickBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(@40);
