@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		45BB405E3DD9BF5DF8EAC963 /* libPods-MiaoShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7C693381562A2E178364FD /* libPods-MiaoShow.a */; };
+		7B0BCE121F271F3B0003F37B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0BCE111F271F3B0003F37B /* HomeViewController.m */; };
+		7B0BCE151F2721760003F37B /* ALinConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0BCE141F2721760003F37B /* ALinConstant.m */; };
 		7B10C1B31F0E1A8C00F0B158 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B10C1B21F0E1A8C00F0B158 /* main.m */; };
 		7B10C1B61F0E1A8C00F0B158 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B10C1B51F0E1A8C00F0B158 /* AppDelegate.m */; };
 		7B10C1B91F0E1A8C00F0B158 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B10C1B81F0E1A8C00F0B158 /* ViewController.m */; };
@@ -48,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B0BCE101F271F3B0003F37B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		7B0BCE111F271F3B0003F37B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		7B0BCE131F2721760003F37B /* ALinConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinConstant.h; sourceTree = "<group>"; };
+		7B0BCE141F2721760003F37B /* ALinConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinConstant.m; sourceTree = "<group>"; };
 		7B10C1AE1F0E1A8C00F0B158 /* MiaoShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiaoShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B10C1B21F0E1A8C00F0B158 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B10C1B41F0E1A8C00F0B158 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +129,74 @@
 				F0130D725907EEC0FB11255C /* Pods-MiaoShow.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B0BCE061F271E5B0003F37B /* Care */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Care;
+			sourceTree = "<group>";
+		};
+		7B0BCE071F271E5B0003F37B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7B0BCE0F1F271F160003F37B /* Controller */,
+				7B0BCE0D1F271EC40003F37B /* Model */,
+				7B0BCE0C1F271EC10003F37B /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7B0BCE081F271E5B0003F37B /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Hot;
+			sourceTree = "<group>";
+		};
+		7B0BCE091F271E5B0003F37B /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		7B0BCE0A1F271E5B0003F37B /* New */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		7B0BCE0B1F271E5B0003F37B /* Web */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		7B0BCE0C1F271EC10003F37B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7B0BCE0D1F271EC40003F37B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7B0BCE0F1F271F160003F37B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B0BCE101F271F3B0003F37B /* HomeViewController.h */,
+				7B0BCE111F271F3B0003F37B /* HomeViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		7B10C1A51F0E1A8C00F0B158 = {
@@ -218,6 +292,12 @@
 		7B10C1E71F0E1FE300F0B158 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7B0BCE091F271E5B0003F37B /* Live */,
+				7B0BCE0B1F271E5B0003F37B /* Web */,
+				7B0BCE071F271E5B0003F37B /* Home */,
+				7B0BCE061F271E5B0003F37B /* Care */,
+				7B0BCE081F271E5B0003F37B /* Hot */,
+				7B0BCE0A1F271E5B0003F37B /* New */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -256,6 +336,8 @@
 		7B10C1EB1F0E1FE300F0B158 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				7B0BCE131F2721760003F37B /* ALinConstant.h */,
+				7B0BCE141F2721760003F37B /* ALinConstant.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -520,10 +602,12 @@
 				7B10C1B31F0E1A8C00F0B158 /* main.m in Sources */,
 				7BC9DEE61F0F36BB007AB4E0 /* LoginViewController.m in Sources */,
 				7BC9DEDD1F0F2B1F007AB4E0 /* MainViewController.m in Sources */,
+				7B0BCE121F271F3B0003F37B /* HomeViewController.m in Sources */,
 				7BC9DEE01F0F31D6007AB4E0 /* ALinNavigationController.m in Sources */,
 				7B10C1FE1F0E23DA00F0B158 /* ProfileController.m in Sources */,
 				7BC9DEE31F0F320A007AB4E0 /* ThirdLoginView.m in Sources */,
 				7B10C2011F0E23F900F0B158 /* Reachability.m in Sources */,
+				7B0BCE151F2721760003F37B /* ALinConstant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,7 +31,7 @@
         
         player.view.frame = self.view.bounds;
         
-        player.scalingMode = IJKMPMovieScalingModeFill;
+        player.scalingMode = IJKMPMovieScalingModeAspectFill;
         
         [self.view addSubview:player.view];
         

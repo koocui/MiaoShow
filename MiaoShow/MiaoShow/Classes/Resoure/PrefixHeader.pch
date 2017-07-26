@@ -25,7 +25,7 @@
 #import <Masonry.h>
 //#import "UIView+SLExtension.h"
 //#import "UIViewController+SLHUD.h"
-//#import "ALinConstant.h"
+#import "ALinConstant.h"
 
 #import "ALinNetworkTool.h"
 #import <MJExtension.h>

@@ -1,23 +1,22 @@
 //
-//  MainViewController.m
+//  HomeViewController.m
 //  MiaoShow
 //
-//  Created by CJW on 17/7/7.
+//  Created by CJW on 17/7/25.
 //  Copyright © 2017年 cjw. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "HomeViewController.h"
 
-@interface MainViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor yellowColor];
 }
 
 - (void)didReceiveMemoryWarning {
