@@ -7,8 +7,13 @@
 //
 
 #import "MainViewController.h"
-
-@interface MainViewController ()
+#import "HomeViewController.h"
+#import "ProfileController.h"
+//#import "ShowTimeViewController.h"
+#import "ALinNavigationController.h"
+//#import "UIDevice+SLExtension.h"
+#import <AVFoundation/AVFoundation.h>
+@interface MainViewController ()<UITabBarControllerDelegate>
 
 @end
 
@@ -16,8 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor yellowColor];
+    
+    [self addChildViewController:[[HomeViewController alloc] init] imageNamed:@"toolbar_home"];
+    UIViewController * showTime = [[UIViewController alloc] init];
+    showTime.view.backgroundColor = [UIColor whiteColor];
+    [self addChildViewController:showTime imageNamed:@"toolbar_live"];
+    [self addChildViewController:[[ProfileController alloc] init] imageNamed:@"toolbar_me"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +34,54 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)addChildViewController:(UIViewController *)childController imageNamed:(NSString *)imageName
+{
+    ALinNavigationController * nav = [[ALinNavigationController alloc]initWithRootViewController:childController];
+    childController.tabBarItem.image = [UIImage imageNamed:imageName];
+    childController.tabBarItem.selectedImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_sel",imageName]];
+    childController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    if ([childController isKindOfClass:[ProfileController class]]){
+        [nav.navigationBar setBackgroundImage:[[UIImage alloc]init] forBarMetrics:UIBarMetricsDefault];
+        nav.navigationBar.shadowImage = [[UIImage alloc]init];
+        nav.navigationBar.translucent = YES;
+    }
+    [self  addChildViewController:nav];
+    
+    
 }
-*/
+-(BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+    if ([tabBarController.childViewControllers indexOfObject:viewController] == tabBarController.childViewControllers.count -2 ){
+//        if ([UIDevice])
+        return NO;
+    }
+    
+    return YES;
+}
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
