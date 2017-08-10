@@ -36,7 +36,9 @@
 -(LFLiveSession*)session{
     if (!_session){
           /***   默认分辨率368 ＊ 640  音频：44.1 iphone6以上48  双声道  方向竖屏 ***/
-         _session = [[LFLiveSession alloc] initWithAudioConfiguration:[LFLiveVideoConfiguration defaultConfiguration] videoConfiguration:[LFLiveVideoConfiguration defaultConfigurationForQuality:LFLiveVideoQuality_Medium2]];
+         LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration defaultConfiguration];
+        
+         _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:[LFLiveVideoConfiguration defaultConfigurationForQuality:LFLiveVideoQuality_Medium2]];
         /**    自己定制高质量音频128K 分辨率设置为720*1280 方向竖屏 */
         /*
          LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration new];
@@ -51,10 +53,10 @@
          videoConfiguration.videoMinBitRate = 500*1024;
          videoConfiguration.videoFrameRate = 15;
          videoConfiguration.videoMaxKeyframeInterval = 30;
-         videoConfiguration.orientation = UIInterfaceOrientationPortrait;
+         videoConfiguration.outputImageOrientation = UIInterfaceOrientationPortrait;
          videoConfiguration.sessionPreset = LFCaptureSessionPreset720x1280;
          
-         _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:videoConfiguration liveType:LFLiveRTMP];
+         _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:videoConfiguration];
          */
 //        设置代理
         _session.delegate = self;

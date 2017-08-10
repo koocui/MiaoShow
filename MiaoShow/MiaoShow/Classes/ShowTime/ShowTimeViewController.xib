@@ -41,27 +41,28 @@
                         <action selector="close" destination="-1" eventType="touchUpInside" id="7gp-5n-gdl"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sZ-xv-lcQ">
-                    <rect key="frame" x="44" y="567" width="291" height="40"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="状态: 未知" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dz-ig-eXo">
+                    <rect key="frame" x="72" y="70" width="243" height="41"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.15367353723404256" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sZ-xv-lcQ">
+                    <rect key="frame" x="42" y="567" width="291" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="EPd-kD-Tg7"/>
                     </constraints>
                     <state key="normal" title="开始直播">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <state key="selected" title="结束直播"/>
                     <connections>
                         <action selector="living:" destination="-1" eventType="touchUpInside" id="6FY-RQ-7j4"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="状态: 未知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dz-ig-eXo">
-                    <rect key="frame" x="154" y="73" width="94" height="23"/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.15367353723404256" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="5sZ-xv-lcQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="75U-YV-jJU"/>
                 <constraint firstAttribute="bottom" secondItem="5sZ-xv-lcQ" secondAttribute="bottom" constant="60" id="c0v-fP-yC6"/>
