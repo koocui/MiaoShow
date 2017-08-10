@@ -24,13 +24,13 @@
 #import <IJKMediaFramework/IJKMediaFramework.h>
 #import <Masonry.h>
 //#import "UIView+SLExtension.h"
-//#import "UIViewController+SLHUD.h"
+#import "UIViewController+SLHUD.h"
 #import "ALinConstant.h"
 
 #import "ALinNetworkTool.h"
 #import <MJExtension.h>
 //#import "UIViewController+SLExtension.h"
-//#import "NSObject+ALinHUD.h"
+#import "NSObject+ALinHUD.h"
 
 #endif /* PrefixHeader_pch */
 

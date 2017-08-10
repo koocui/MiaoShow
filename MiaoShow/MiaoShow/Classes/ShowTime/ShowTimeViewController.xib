@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowTimeViewController">
+            <connections>
+                <outlet property="beautifulBtn" destination="mhJ-FI-83b" id="clM-Hf-iVU"/>
+                <outlet property="livingBtn" destination="5sZ-xv-lcQ" id="zlO-Hs-Tpf"/>
+                <outlet property="statusLabel" destination="2Dz-ig-eXo" id="nn6-tv-TRQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhJ-FI-83b">
+                    <rect key="frame" x="13" y="20" width="163" height="30"/>
+                    <color key="backgroundColor" red="0.082752403846153899" green="0.069960026193825478" blue="0.075441146207976748" alpha="0.15367353723404256" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="智能美颜已经开启" image="icon_beautifulface_19x19"/>
+                    <connections>
+                        <action selector="beautiful:" destination="-1" eventType="touchUpInside" id="bfT-Bh-5le"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vj7-pb-3tG">
+                    <rect key="frame" x="240" y="15" width="43" height="39"/>
+                    <state key="normal" title="Button" image="camera_change_40x40"/>
+                    <connections>
+                        <action selector="switchCamare:" destination="-1" eventType="touchUpInside" id="QZl-qs-AxA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWd-YM-tWn">
+                    <rect key="frame" x="311" y="15" width="38" height="39"/>
+                    <state key="normal" title="Button" image="talk_close_40x40"/>
+                    <connections>
+                        <action selector="close" destination="-1" eventType="touchUpInside" id="7gp-5n-gdl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sZ-xv-lcQ">
+                    <rect key="frame" x="44" y="567" width="291" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="EPd-kD-Tg7"/>
+                    </constraints>
+                    <state key="normal" title="开始直播">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="living:" destination="-1" eventType="touchUpInside" id="6FY-RQ-7j4"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="状态: 未知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dz-ig-eXo">
+                    <rect key="frame" x="154" y="73" width="94" height="23"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.15367353723404256" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="5sZ-xv-lcQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="75U-YV-jJU"/>
+                <constraint firstAttribute="bottom" secondItem="5sZ-xv-lcQ" secondAttribute="bottom" constant="60" id="c0v-fP-yC6"/>
+                <constraint firstAttribute="trailing" secondItem="5sZ-xv-lcQ" secondAttribute="trailing" constant="40" id="dBw-yv-DJQ"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="355.5" y="298.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera_change_40x40" width="40" height="40"/>
+        <image name="icon_beautifulface_19x19" width="19" height="19"/>
+        <image name="talk_close_40x40" width="40" height="40"/>
+    </resources>
+</document>

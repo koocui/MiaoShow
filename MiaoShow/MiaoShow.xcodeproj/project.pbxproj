@@ -26,6 +26,13 @@
 		7B10C1FE1F0E23DA00F0B158 /* ProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B10C1FD1F0E23DA00F0B158 /* ProfileController.m */; };
 		7B10C2011F0E23F900F0B158 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B10C2001F0E23F900F0B158 /* Reachability.m */; };
 		7B10C2041F0E28E400F0B158 /* ALinNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B10C2031F0E28E400F0B158 /* ALinNetworkTool.m */; };
+		7B293ACF1F3BF3DC00CD3994 /* UIDevice+SLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B293ACE1F3BF3DC00CD3994 /* UIDevice+SLExtension.m */; };
+		7B293AD21F3BF4AC00CD3994 /* NSObject+ALinHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B293AD11F3BF4AC00CD3994 /* NSObject+ALinHUD.m */; };
+		7B293AD51F3BF59000CD3994 /* UIViewController+SLHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B293AD41F3BF59000CD3994 /* UIViewController+SLHUD.m */; };
+		7B293AD71F3C080100CD3994 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B293AD61F3C080100CD3994 /* libz.tbd */; };
+		7B293ADF1F3C09A100CD3994 /* ALinH264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B293ADE1F3C09A100CD3994 /* ALinH264Encoder.m */; };
+		7B293AE31F3C0EC800CD3994 /* ShowTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B293AE11F3C0EC800CD3994 /* ShowTimeViewController.m */; };
+		7B293AE41F3C0EC800CD3994 /* ShowTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B293AE21F3C0EC800CD3994 /* ShowTimeViewController.xib */; };
 		7BC9DEDD1F0F2B1F007AB4E0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9DEDC1F0F2B1F007AB4E0 /* MainViewController.m */; };
 		7BC9DEE01F0F31D6007AB4E0 /* ALinNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9DEDF1F0F31D6007AB4E0 /* ALinNavigationController.m */; };
 		7BC9DEE31F0F320A007AB4E0 /* ThirdLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9DEE21F0F320A007AB4E0 /* ThirdLoginView.m */; };
@@ -82,6 +89,18 @@
 		7B10C2001F0E23F900F0B158 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		7B10C2021F0E28E400F0B158 /* ALinNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinNetworkTool.h; sourceTree = "<group>"; };
 		7B10C2031F0E28E400F0B158 /* ALinNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinNetworkTool.m; sourceTree = "<group>"; };
+		7B293ACD1F3BF3DC00CD3994 /* UIDevice+SLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SLExtension.h"; sourceTree = "<group>"; };
+		7B293ACE1F3BF3DC00CD3994 /* UIDevice+SLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SLExtension.m"; sourceTree = "<group>"; };
+		7B293AD01F3BF4AC00CD3994 /* NSObject+ALinHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ALinHUD.h"; sourceTree = "<group>"; };
+		7B293AD11F3BF4AC00CD3994 /* NSObject+ALinHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ALinHUD.m"; sourceTree = "<group>"; };
+		7B293AD31F3BF59000CD3994 /* UIViewController+SLHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SLHUD.h"; sourceTree = "<group>"; };
+		7B293AD41F3BF59000CD3994 /* UIViewController+SLHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SLHUD.m"; sourceTree = "<group>"; };
+		7B293AD61F3C080100CD3994 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7B293ADD1F3C09A100CD3994 /* ALinH264Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinH264Encoder.h; sourceTree = "<group>"; };
+		7B293ADE1F3C09A100CD3994 /* ALinH264Encoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinH264Encoder.m; sourceTree = "<group>"; };
+		7B293AE01F3C0EC800CD3994 /* ShowTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowTimeViewController.h; sourceTree = "<group>"; };
+		7B293AE11F3C0EC800CD3994 /* ShowTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowTimeViewController.m; sourceTree = "<group>"; };
+		7B293AE21F3C0EC800CD3994 /* ShowTimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowTimeViewController.xib; sourceTree = "<group>"; };
 		7BC9DEDB1F0F2B1F007AB4E0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		7BC9DEDC1F0F2B1F007AB4E0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		7BC9DEDE1F0F31D6007AB4E0 /* ALinNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinNavigationController.h; sourceTree = "<group>"; };
@@ -100,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B293AD71F3C080100CD3994 /* libz.tbd in Frameworks */,
 				45BB405E3DD9BF5DF8EAC963 /* libPods-MiaoShow.a in Frameworks */,
 				7B10C1F11F0E203800F0B158 /* IJKMediaFramework.framework in Frameworks */,
 			);
@@ -365,6 +385,11 @@
 		7B10C1EE1F0E1FE300F0B158 /* ShowTime */ = {
 			isa = PBXGroup;
 			children = (
+				7B293ADC1F3C094D00CD3994 /* H26Encoder */,
+				7B293ADB1F3C094A00CD3994 /* Fiter */,
+				7B293ADA1F3C094400CD3994 /* Controller */,
+				7B293AD91F3C094200CD3994 /* Model */,
+				7B293AD81F3C093A00CD3994 /* VIew */,
 			);
 			path = ShowTime;
 			sourceTree = "<group>";
@@ -372,6 +397,14 @@
 		7B10C1EF1F0E1FE300F0B158 /* Toos */ = {
 			isa = PBXGroup;
 			children = (
+				7B293ACC1F3BF34600CD3994 /* UIImage */,
+				7B293ACB1F3BF34300CD3994 /* UIIMageVIew */,
+				7B293ACA1F3BF34100CD3994 /* ViewController */,
+				7B293AC91F3BF33700CD3994 /* WIndow */,
+				7B293AC81F3BF33500CD3994 /* Refresh */,
+				7B293AC71F3BF33300CD3994 /* Device */,
+				7B293AC61F3BF33100CD3994 /* View */,
+				7B293AC51F3BF32E00CD3994 /* HUD */,
 			);
 			path = Toos;
 			sourceTree = "<group>";
@@ -383,6 +416,108 @@
 				7B10C1FD1F0E23DA00F0B158 /* ProfileController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		7B293AC51F3BF32E00CD3994 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				7B293AD31F3BF59000CD3994 /* UIViewController+SLHUD.h */,
+				7B293AD41F3BF59000CD3994 /* UIViewController+SLHUD.m */,
+				7B293AD01F3BF4AC00CD3994 /* NSObject+ALinHUD.h */,
+				7B293AD11F3BF4AC00CD3994 /* NSObject+ALinHUD.m */,
+			);
+			name = HUD;
+			sourceTree = "<group>";
+		};
+		7B293AC61F3BF33100CD3994 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7B293AC71F3BF33300CD3994 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				7B293ACD1F3BF3DC00CD3994 /* UIDevice+SLExtension.h */,
+				7B293ACE1F3BF3DC00CD3994 /* UIDevice+SLExtension.m */,
+			);
+			name = Device;
+			sourceTree = "<group>";
+		};
+		7B293AC81F3BF33500CD3994 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Refresh;
+			sourceTree = "<group>";
+		};
+		7B293AC91F3BF33700CD3994 /* WIndow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WIndow;
+			sourceTree = "<group>";
+		};
+		7B293ACA1F3BF34100CD3994 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		7B293ACB1F3BF34300CD3994 /* UIIMageVIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UIIMageVIew;
+			sourceTree = "<group>";
+		};
+		7B293ACC1F3BF34600CD3994 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UIImage;
+			sourceTree = "<group>";
+		};
+		7B293AD81F3C093A00CD3994 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VIew;
+			sourceTree = "<group>";
+		};
+		7B293AD91F3C094200CD3994 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7B293ADA1F3C094400CD3994 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B293AE01F3C0EC800CD3994 /* ShowTimeViewController.h */,
+				7B293AE11F3C0EC800CD3994 /* ShowTimeViewController.m */,
+				7B293AE21F3C0EC800CD3994 /* ShowTimeViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7B293ADB1F3C094A00CD3994 /* Fiter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fiter;
+			sourceTree = "<group>";
+		};
+		7B293ADC1F3C094D00CD3994 /* H26Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				7B293ADD1F3C09A100CD3994 /* ALinH264Encoder.h */,
+				7B293ADE1F3C09A100CD3994 /* ALinH264Encoder.m */,
+			);
+			name = H26Encoder;
 			sourceTree = "<group>";
 		};
 		7BC9DED91F0F2AC6007AB4E0 /* View */ = {
@@ -406,6 +541,7 @@
 		E32F68B65F5E436C9E9A5857 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B293AD61F3C080100CD3994 /* libz.tbd */,
 				BC7C693381562A2E178364FD /* libPods-MiaoShow.a */,
 			);
 			name = Frameworks;
@@ -519,6 +655,7 @@
 			files = (
 				7B10C1C11F0E1A8C00F0B158 /* LaunchScreen.storyboard in Resources */,
 				7B10C1BE1F0E1A8C00F0B158 /* Assets.xcassets in Resources */,
+				7B293AE41F3C0EC800CD3994 /* ShowTimeViewController.xib in Resources */,
 				7B10C1F71F0E226B00F0B158 /* danmu.plist in Resources */,
 				7B10C1F81F0E226B00F0B158 /* login_video.mp4 in Resources */,
 				7B10C1FA1F0E226B00F0B158 /* user.plist in Resources */,
@@ -600,13 +737,18 @@
 				7B10C1B91F0E1A8C00F0B158 /* ViewController.m in Sources */,
 				7B10C1B61F0E1A8C00F0B158 /* AppDelegate.m in Sources */,
 				7B10C1B31F0E1A8C00F0B158 /* main.m in Sources */,
+				7B293ADF1F3C09A100CD3994 /* ALinH264Encoder.m in Sources */,
 				7BC9DEE61F0F36BB007AB4E0 /* LoginViewController.m in Sources */,
 				7BC9DEDD1F0F2B1F007AB4E0 /* MainViewController.m in Sources */,
 				7B0BCE121F271F3B0003F37B /* HomeViewController.m in Sources */,
+				7B293AD21F3BF4AC00CD3994 /* NSObject+ALinHUD.m in Sources */,
+				7B293ACF1F3BF3DC00CD3994 /* UIDevice+SLExtension.m in Sources */,
 				7BC9DEE01F0F31D6007AB4E0 /* ALinNavigationController.m in Sources */,
 				7B10C1FE1F0E23DA00F0B158 /* ProfileController.m in Sources */,
 				7BC9DEE31F0F320A007AB4E0 /* ThirdLoginView.m in Sources */,
 				7B10C2011F0E23F900F0B158 /* Reachability.m in Sources */,
+				7B293AD51F3BF59000CD3994 /* UIViewController+SLHUD.m in Sources */,
+				7B293AE31F3C0EC800CD3994 /* ShowTimeViewController.m in Sources */,
 				7B0BCE151F2721760003F37B /* ALinConstant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -751,6 +893,7 @@
 			baseConfigurationReference = E68AFF53D80BD6B62082A6AA /* Pods-MiaoShow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MiaoShow/Classes/Frameworks",
@@ -770,6 +913,7 @@
 			baseConfigurationReference = F0130D725907EEC0FB11255C /* Pods-MiaoShow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MiaoShow/Classes/Frameworks",

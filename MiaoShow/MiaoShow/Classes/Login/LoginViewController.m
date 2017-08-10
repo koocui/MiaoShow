@@ -65,7 +65,7 @@
         UIButton * btn = [[UIButton alloc]init];
         btn.backgroundColor = [UIColor clearColor];
         btn.layer.borderWidth = 1;
-        btn.layer.backgroundColor = [UIColor whiteColor].CGColor;
+        btn.layer.borderColor = [UIColor magentaColor].CGColor;
         [btn setTitle:@"CJW快速通道" forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor magentaColor] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(loginSuccess) forControlEvents:UIControlEventTouchUpInside];
@@ -157,7 +157,7 @@
 // 登录成功
 - (void)loginSuccess
 {
-//    [self showHint:@"登录成功"];
+    [self showHint:@"登录成功"];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self presentViewController:[[MainViewController alloc] init] animated:NO completion:^{
