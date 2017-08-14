@@ -33,6 +33,10 @@
 		7B293ADF1F3C09A100CD3994 /* ALinH264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B293ADE1F3C09A100CD3994 /* ALinH264Encoder.m */; };
 		7B293AE31F3C0EC800CD3994 /* ShowTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B293AE11F3C0EC800CD3994 /* ShowTimeViewController.m */; };
 		7B293AE41F3C0EC800CD3994 /* ShowTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B293AE21F3C0EC800CD3994 /* ShowTimeViewController.xib */; };
+		7BC70F021F41C73700680250 /* ALinCareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC70F001F41C73700680250 /* ALinCareViewController.m */; };
+		7BC70F031F41C73700680250 /* ALinCareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC70F011F41C73700680250 /* ALinCareViewController.xib */; };
+		7BC70F061F41C75600680250 /* ALinHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC70F051F41C75600680250 /* ALinHotViewController.m */; };
+		7BC70F091F41C77200680250 /* ALinNewStarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC70F081F41C77200680250 /* ALinNewStarViewController.m */; };
 		7BC9DEDD1F0F2B1F007AB4E0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9DEDC1F0F2B1F007AB4E0 /* MainViewController.m */; };
 		7BC9DEE01F0F31D6007AB4E0 /* ALinNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9DEDF1F0F31D6007AB4E0 /* ALinNavigationController.m */; };
 		7BC9DEE31F0F320A007AB4E0 /* ThirdLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9DEE21F0F320A007AB4E0 /* ThirdLoginView.m */; };
@@ -101,6 +105,13 @@
 		7B293AE01F3C0EC800CD3994 /* ShowTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowTimeViewController.h; sourceTree = "<group>"; };
 		7B293AE11F3C0EC800CD3994 /* ShowTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowTimeViewController.m; sourceTree = "<group>"; };
 		7B293AE21F3C0EC800CD3994 /* ShowTimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowTimeViewController.xib; sourceTree = "<group>"; };
+		7BC70EFF1F41C73700680250 /* ALinCareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinCareViewController.h; sourceTree = "<group>"; };
+		7BC70F001F41C73700680250 /* ALinCareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinCareViewController.m; sourceTree = "<group>"; };
+		7BC70F011F41C73700680250 /* ALinCareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALinCareViewController.xib; sourceTree = "<group>"; };
+		7BC70F041F41C75600680250 /* ALinHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinHotViewController.h; sourceTree = "<group>"; };
+		7BC70F051F41C75600680250 /* ALinHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinHotViewController.m; sourceTree = "<group>"; };
+		7BC70F071F41C77200680250 /* ALinNewStarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinNewStarViewController.h; sourceTree = "<group>"; };
+		7BC70F081F41C77200680250 /* ALinNewStarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinNewStarViewController.m; sourceTree = "<group>"; };
 		7BC9DEDB1F0F2B1F007AB4E0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		7BC9DEDC1F0F2B1F007AB4E0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		7BC9DEDE1F0F31D6007AB4E0 /* ALinNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinNavigationController.h; sourceTree = "<group>"; };
@@ -154,6 +165,9 @@
 		7B0BCE061F271E5B0003F37B /* Care */ = {
 			isa = PBXGroup;
 			children = (
+				7BC70EF71F41C69B00680250 /* Controller */,
+				7BC70EF61F41C69900680250 /* Model */,
+				7BC70EF51F41C69300680250 /* VIew */,
 			);
 			path = Care;
 			sourceTree = "<group>";
@@ -171,6 +185,9 @@
 		7B0BCE081F271E5B0003F37B /* Hot */ = {
 			isa = PBXGroup;
 			children = (
+				7BC70EFA1F41C6A200680250 /* Model */,
+				7BC70EF91F41C6A000680250 /* VIew */,
+				7BC70EF81F41C69E00680250 /* Controller */,
 			);
 			path = Hot;
 			sourceTree = "<group>";
@@ -180,13 +197,6 @@
 			children = (
 			);
 			path = Live;
-			sourceTree = "<group>";
-		};
-		7B0BCE0A1F271E5B0003F37B /* New */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = New;
 			sourceTree = "<group>";
 		};
 		7B0BCE0B1F271E5B0003F37B /* Web */ = {
@@ -317,7 +327,7 @@
 				7B0BCE071F271E5B0003F37B /* Home */,
 				7B0BCE061F271E5B0003F37B /* Care */,
 				7B0BCE081F271E5B0003F37B /* Hot */,
-				7B0BCE0A1F271E5B0003F37B /* New */,
+				7BC70EFB1F41C6B800680250 /* New */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -520,6 +530,86 @@
 			name = H26Encoder;
 			sourceTree = "<group>";
 		};
+		7BC70EF51F41C69300680250 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VIew;
+			sourceTree = "<group>";
+		};
+		7BC70EF61F41C69900680250 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7BC70EF71F41C69B00680250 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BC70EFF1F41C73700680250 /* ALinCareViewController.h */,
+				7BC70F001F41C73700680250 /* ALinCareViewController.m */,
+				7BC70F011F41C73700680250 /* ALinCareViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7BC70EF81F41C69E00680250 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BC70F041F41C75600680250 /* ALinHotViewController.h */,
+				7BC70F051F41C75600680250 /* ALinHotViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7BC70EF91F41C6A000680250 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VIew;
+			sourceTree = "<group>";
+		};
+		7BC70EFA1F41C6A200680250 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7BC70EFB1F41C6B800680250 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				7BC70EFE1F41C6DF00680250 /* Controller */,
+				7BC70EFD1F41C6DC00680250 /* Model */,
+				7BC70EFC1F41C6D900680250 /* View */,
+			);
+			name = New;
+			sourceTree = "<group>";
+		};
+		7BC70EFC1F41C6D900680250 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7BC70EFD1F41C6DC00680250 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7BC70EFE1F41C6DF00680250 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BC70F071F41C77200680250 /* ALinNewStarViewController.h */,
+				7BC70F081F41C77200680250 /* ALinNewStarViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		7BC9DED91F0F2AC6007AB4E0 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -658,6 +748,7 @@
 				7B293AE41F3C0EC800CD3994 /* ShowTimeViewController.xib in Resources */,
 				7B10C1F71F0E226B00F0B158 /* danmu.plist in Resources */,
 				7B10C1F81F0E226B00F0B158 /* login_video.mp4 in Resources */,
+				7BC70F031F41C73700680250 /* ALinCareViewController.xib in Resources */,
 				7B10C1FA1F0E226B00F0B158 /* user.plist in Resources */,
 				7B10C1F91F0E226B00F0B158 /* loginmovie.mp4 in Resources */,
 				7B10C1BC1F0E1A8C00F0B158 /* Main.storyboard in Resources */,
@@ -734,6 +825,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B10C2041F0E28E400F0B158 /* ALinNetworkTool.m in Sources */,
+				7BC70F021F41C73700680250 /* ALinCareViewController.m in Sources */,
 				7B10C1B91F0E1A8C00F0B158 /* ViewController.m in Sources */,
 				7B10C1B61F0E1A8C00F0B158 /* AppDelegate.m in Sources */,
 				7B10C1B31F0E1A8C00F0B158 /* main.m in Sources */,
@@ -741,7 +833,9 @@
 				7BC9DEE61F0F36BB007AB4E0 /* LoginViewController.m in Sources */,
 				7BC9DEDD1F0F2B1F007AB4E0 /* MainViewController.m in Sources */,
 				7B0BCE121F271F3B0003F37B /* HomeViewController.m in Sources */,
+				7BC70F091F41C77200680250 /* ALinNewStarViewController.m in Sources */,
 				7B293AD21F3BF4AC00CD3994 /* NSObject+ALinHUD.m in Sources */,
+				7BC70F061F41C75600680250 /* ALinHotViewController.m in Sources */,
 				7B293ACF1F3BF3DC00CD3994 /* UIDevice+SLExtension.m in Sources */,
 				7BC9DEE01F0F31D6007AB4E0 /* ALinNavigationController.m in Sources */,
 				7B10C1FE1F0E23DA00F0B158 /* ProfileController.m in Sources */,

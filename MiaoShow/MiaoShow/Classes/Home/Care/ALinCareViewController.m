@@ -1,27 +1,22 @@
 //
-//  HomeViewController.m
+//  ALinCareViewController.m
 //  MiaoShow
 //
-//  Created by CJW on 17/7/25.
+//  Created by CJW on 17/8/14.
 //  Copyright © 2017年 cjw. All rights reserved.
 //
 
-#import "HomeViewController.h"
-//#import "ALinSelectedView.h"
-#import "ALinHotViewController.h"
-#import "ALinNewStarViewController.h"
 #import "ALinCareViewController.h"
-//#import "ALinWebViewController.h"
-@interface HomeViewController ()
+
+@interface ALinCareViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation ALinCareViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
